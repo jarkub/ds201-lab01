@@ -1,3 +1,10 @@
-# vscode:
-#    extensions:
-#     - https://github.com/HadesArchitect/katapod/releases/download/nightly/katapod-nightly.vsix
+tasks:
+  - name: install-dependencies
+    before: |
+      printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
+      printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
+      curl -Ls "https://dtsx.io/get-astra-cli" | bash >> ./install.log
+    init: |
+      pip install -U cqlsh
+    command: | 
+      source /home/gitpod/.astra/cli/astra-init.sh
