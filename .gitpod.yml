@@ -8,4 +8,4 @@ tasks:
     init: |
       pip install -U cqlsh
     command: | 
-      source /home/gitpod/.astra/cli/astra-init.sh
+      clear
