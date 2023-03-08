@@ -3,7 +3,7 @@ tasks:
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
-      curl -Ls "https://dtsx.io/get-astra-cli" | bash >> ./install.log
+      curl https://katapod-file-store.s3.us-west-1.amazonaws.com/dse-6.8.33-bin.tar.gz
     init: |
       pip install -U cqlsh
     command: | 
