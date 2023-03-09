@@ -20,9 +20,15 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Create tables</div>
+<div class="step-title">Download and extract Cassandra</div>
 
-✅ Download the Cassandra tarball:
+There are multiple ways to install Cassandra:
+- Linux package managers
+- Docker
+- Tarball
+
+
+✅ Download the Cassandra tarball from an Apache CDN:
 ```
 curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
@@ -35,12 +41,14 @@ ls -l
 
 ✅ Extract tarball:
 ```
-tar xvf apache-cassandra-4.1.0-bin.tar.gz
+tar xf apache-cassandra-4.1.0-bin.tar.gz
 ```
 
-✅ Move the directory to `/etc`:
+The directory should now contain the tarball and the `apache-cassandra-4.1.0` directory
+
+✅ View the downloaded tarball:
 ```
-sudo mv apache-cassandra-4.1.0 /etc/apache-cassandra-4.1.0
+ls -l
 ```
 
 <!-- NAVIGATION -->
