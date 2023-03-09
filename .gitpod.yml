@@ -3,7 +3,7 @@ tasks:
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
-      curl https://www.apache.org/dyn/closer.lua/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
+      curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
         --output apache-cassandra-4.1.0-bin.tar.gz
     init: |
       pip install -U cqlsh
