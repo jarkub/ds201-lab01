@@ -22,30 +22,15 @@
 
 <div class="step-title">Create tables</div>
 
-✅ Create table `networks`:
+✅ Download the Cassandra tarball:
 ```
-CREATE TABLE IF NOT EXISTS networks (
-  bucket TEXT,
-  name TEXT,
-  description TEXT,
-  region TEXT,
-  num_sensors INT,
-  PRIMARY KEY ((bucket),name)
-);
+curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
+        --output apache-cassandra-4.1.0-bin.tar.gz
 ```
 
-✅ Create table `temperatures_by_network`:
+✅ View the downloaded tarball:
 ```
-CREATE TABLE IF NOT EXISTS temperatures_by_network (
-  network TEXT,
-  week DATE,
-  date_hour TIMESTAMP,
-  sensor TEXT,
-  avg_temperature FLOAT,
-  latitude DECIMAL,
-  longitude DECIMAL,
-  PRIMARY KEY ((network,week),date_hour,sensor)
-) WITH CLUSTERING ORDER BY (date_hour DESC, sensor ASC);
+ls -l
 ```
 
 ✅ Create table `sensors_by_network`:
