@@ -33,33 +33,14 @@ curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz 
 ls -l
 ```
 
-✅ Create table `sensors_by_network`:
+✅ Extract tarball:
 ```
-CREATE TABLE IF NOT EXISTS sensors_by_network (
-  network TEXT,
-  sensor TEXT,
-  latitude DECIMAL,
-  longitude DECIMAL,
-  characteristics MAP<TEXT,TEXT>,
-  PRIMARY KEY ((network),sensor)
-);
+tar xvf apache-cassandra-4.1.0-bin.tar.gz
 ```
 
-
-✅ Create table `temperatures_by_sensor`:
+✅ Move the directory to `/etc`:
 ```
-CREATE TABLE IF NOT EXISTS temperatures_by_sensor (
-  sensor TEXT,
-  date DATE,
-  timestamp TIMESTAMP,
-  value FLOAT,
-  PRIMARY KEY ((sensor,date),timestamp)
-) WITH CLUSTERING ORDER BY (timestamp DESC);
-```
-
-✅ Verify that the four tables have been created:
-```
-DESCRIBE TABLES;
+sudo mv apache-cassandra-4.1.0 /etc/apache-cassandra-4.1.0
 ```
 
 <!-- NAVIGATION -->
@@ -67,7 +48,7 @@ DESCRIBE TABLES;
  <a href='command:katapod.loadPage?[{"step":"intro"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
- <a href='command:katapod.loadPage?[{"step":"step3"}]'
+ <a href='command:katapod.loadPage?[{"step":"step2"}]'
     class="btn btn-dark navigation-bottom-right">Next ➡️
   </a>
 </div>
