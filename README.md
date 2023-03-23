@@ -1,9 +1,12 @@
-# Katapod test
+# DS201 Exercise 01
 
-## Explore KataPod
+## Install and Start Apache Cassandra™
 
 **In this hands-on lab, you will:**
-* Do cool stuff
+* Download the Cassandra tarball from a CDN
+* Extract Cassandra
+* Start Cassandra
+* Verify that Cassandra is up and running
 
 
 ## Start the hands-on lab:
