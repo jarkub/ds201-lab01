@@ -2,7 +2,7 @@
 <div class="top">
   <img class="scenario-academy-logo" src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-2023.svg" />
   <div class="scenario-title-section">
-    <span class="scenario-title">Install and Start<br>Apache Cassandra™</span>
+    <span class="scenario-title">Install Apache Cassandra™</span>
     <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:academy@datastax.com">email</a>.</span>
   </div>
 </div>
@@ -56,6 +56,9 @@ The directory should now contain the tarball and the `apache-cassandra-4.1.0` di
 ```
 ls -l
 ```
+
+This lab uses a single Cassandra instance. (Subsequent labs will use a multi-node Cassandra cluster.)
+
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
