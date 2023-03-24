@@ -2,7 +2,7 @@
 <div class="top">
   <img class="scenario-academy-logo" src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-2023.svg" />
   <div class="scenario-title-section">
-    <span class="scenario-title">Configure Apache Cassandra™</span>
+    <span class="scenario-title">Start Apache Cassandra™</span>
     <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:academy@datastax.com">email</a>.</span>
   </div>
 </div>
@@ -12,42 +12,36 @@
  <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
- <a href='command:katapod.loadPage?[{"step":"step3"}]'
-    class="btn btn-dark navigation-bottom-right">Next ➡️
-  </a>
+<span class="step-count"> Step 2 of 2</span>
 </div>
 
 <!-- CONTENT -->
 
-<div class="step-title">XXX</div>
-
-There are multiple ways to install Cassandra:
-- Linux package managers
-- Docker
-- Tarball
+<div class="step-title">Start Cassandra</div>
 
 
-✅ Download the Cassandra tarball from an Apache CDN:
+
+
+✅ Switch to the `apache-cassandra-4.1.0/bin` directory.
 ```
-curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
-        --output apache-cassandra-4.1.0-bin.tar.gz
+cd /workspace/ds201-lab01/apache-cassandra-4.1.0/bin
 ```
 
-✅ View the downloaded tarball:
+✅ View the `bin` directory:
 ```
 ls -l
 ```
 
-✅ Extract tarball:
+✅ Start Cassandra:
 ```
-tar xf apache-cassandra-4.1.0-bin.tar.gz
+./cassandra
 ```
 
-The directory should now contain the tarball and the `apache-cassandra-4.1.0` directory
+It may take a while for Cassandra to start. 
 
-✅ View the directory:
+✅ Run `nodetool` to determine Cassandra's status:
 ```
-ls -l
+./nodetool status
 ```
 
 <!-- NAVIGATION -->
@@ -55,7 +49,4 @@ ls -l
  <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
- <a href='command:katapod.loadPage?[{"step":"step3"}]'
-    class="btn btn-dark navigation-bottom-right">Next ➡️
-  </a>
 </div>
