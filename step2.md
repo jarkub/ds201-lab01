@@ -39,10 +39,19 @@ ls -l
 
 It may take a while for Cassandra to start. 
 
-✅ Run `nodetool` to determine Cassandra's status:
+✅ Run `nodetool` to determine Cassandra's status (you may have to run this command multiple times until Cassandra starts):
 ```
 ./nodetool status
 ```
+
+You should see the status *Up* and state *Normal* - *UN*.
+
+<pre>
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load        Tokens  Owns (effective) ...
+UN  127.0.0.1  104.34 KiB  16      100.0%           ...
+</pre>
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
