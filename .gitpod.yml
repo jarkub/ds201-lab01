@@ -4,7 +4,6 @@ tasks:
       printf 'export PATH="$HOME%s:$PATH"\n' "/.astra/cli" >> $HOME/.bashrc
       printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
     init: |
-      pip install -U cqlsh
     command: | 
       clear
 github:
