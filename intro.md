@@ -20,9 +20,10 @@
             </ul>
             <div class="scenario-objectives">In this hands-on lab, you will:</div>
             <ul>
-              <li><span class="scenario-objective">Access the command line in your exercise environment</span></li>
-              <li><span class="scenario-objective">Download and install Cassandra from a tarball</span></li>
-              <li><span class="scenario-objective">Start Cassandra and verify that it is running with <tt>nodetool<tt></span></li>
+              <li><span class="scenario-objective">Download the Cassandra tarball from a CDN</span></li>
+              <li><span class="scenario-objective">Extract Cassandra</span></li>
+              <li><span class="scenario-objective">Start Cassandra</span></li>
+              <li><span class="scenario-objective">Verify that Cassandra is up and running</span></li>
             </ul>
                         <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-cassandra">
               Start the lab
