@@ -3,7 +3,7 @@
   <img class="scenario-academy-logo" src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-2023.svg" />
   <div class="scenario-title-section">
     <span class="scenario-title">Install and Start Apache Cassandra™</span>
-    <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:aleksandr.volochnev@datastax.com">email</a> or <a href="https://dtsx.io/aleks">LinkedIn</a>.</span> 
+    <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:acadamy@datastax.com">email</a>.</span> 
   </div>
 </div>
 
