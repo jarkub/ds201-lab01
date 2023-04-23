@@ -10,7 +10,6 @@ echo " ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚�
 echo ""
 
 echo -n 'Preparing your environment ...'; 
-sleep 5
 echo ' DONE!'
 echo "Environment ready."
 
