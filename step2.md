@@ -46,11 +46,11 @@ It may take a while for Cassandra to start.
 
 You should see the status *Up* and state *Normal* - *UN*.
 
-<pre>
+<pre class="non-executable-code">
 Status=Up/Down
 |/ State=Normal/Leaving/Joining/Moving
 --  Address    Load        Tokens  Owns (effective) ...
-UN  127.0.0.1  104.34 KiB  16      100.0%           ...
+<b>UN</b>  127.0.0.1  104.34 KiB  16      100.0%           ...
 </pre>
 
 <!-- NAVIGATION -->
