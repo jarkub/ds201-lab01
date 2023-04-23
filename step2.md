@@ -13,6 +13,9 @@
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
 <span class="step-count"> Step 2 of 2</span>
+ <a href='command:katapod.loadPage?[{"step":"finish"}]' 
+    class="btn btn-dark navigation-top-right">Next ➡️
+  </a>
 </div>
 
 <!-- CONTENT -->
@@ -39,7 +42,7 @@ ls -l
 
 It may take a while for Cassandra to start. 
 
-✅ Run `nodetool` to determine Cassandra's status (you may have to run this command multiple times until Cassandra starts):
+✅ Run *nodetool* to determine Cassandra's status (you may have to run this command multiple times until Cassandra starts):
 ```
 ./nodetool status
 ```
@@ -58,4 +61,7 @@ Status=Up/Down
  <a href='command:katapod.loadPage?[{"step":"step1"}]'
    class="btn btn-dark navigation-bottom-left">⬅️ Back
  </a>
+  <a href='command:katapod.loadPage?[{"step":"finish"}]' 
+    class="btn btn-dark navigation-top-right">Next ➡️
+  </a>
 </div>
