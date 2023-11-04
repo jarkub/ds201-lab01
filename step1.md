@@ -36,8 +36,8 @@ In this lab we will install Cassandra from a Tarball.
 
 ✅ Download the Cassandra tarball from an Apache CDN:
 ```
-curl https://dlcdn.apache.org/cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz \
-        --output apache-cassandra-4.1.0-bin.tar.gz
+curl https://dlcdn.apache.org/cassandra/4.1.3/apache-cassandra-4.1.3-bin.tar.gz \
+        --output apache-cassandra-4.1.3-bin.tar.gz
 ```
 
 ✅ View the downloaded tarball:
@@ -47,10 +47,10 @@ ls -l
 
 ✅ Extract tarball:
 ```
-tar xf apache-cassandra-4.1.0-bin.tar.gz
+tar xf apache-cassandra-4.1.3-bin.tar.gz
 ```
 
-The directory should now contain the tarball and the `apache-cassandra-4.1.0` directory
+The directory should now contain the tarball and the `apache-cassandra-4.1.3` directory
 
 ✅ View the directory:
 ```
