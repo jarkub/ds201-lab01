@@ -3,10 +3,9 @@
     "workbench.statusBar.visible": false,
     "workbench.panel.defaultLocation": "right",
     "workbench.panel.opensMaximized": "preserve",
-    "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
     "terminal.integrated.defaultLocation": "view",
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "breadcrumbs.enabled": false,
     "zenMode.fullScreen": false,
     "workbench.startupEditor": "none"
